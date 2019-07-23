@@ -8,7 +8,8 @@ Tags: bootstrap
 
  body {
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: #555;
+    color: #f01b1b;
+    background-color: #bbc7cf;
   }
   
   h1, .h1,
@@ -20,9 +21,19 @@ Tags: bootstrap
     margin-top: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
-    color: #333;
+    color: rgb(114, 2, 2);
   }
-  
+
+  /*
+  *header
+  */
+  /* #header {
+    background: url("<?php bloginfo('stylesheet_directory'); ?>/wp_fakenews/wp-content/themes/fakenews/images/fakenews.png") 
+    no-repeat bottom center; }
+  #headerimg  {
+    margin: 7px 9px 0; 
+    height: 192px; 
+    width: 740px; } */
   
   /*
    * Override Bootstrap's default container.
