@@ -18,7 +18,9 @@
 <body>
   <div class="container">
     <div class="row">
-    <img src="/wp_fakenews/wp-content/themes/fakenews/images/fakenews.png" class="img-fluid" alt="fakenews">
+    <!-- changable header on dashboard -->
+    <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" class="img-fluid" alt="fakenews" />
+    <!-- <img src="/wp_fakenews/wp-content/themes/fakenews/images/fakenews.png" class="img-fluid" alt="fakenews"> -->
         <h1>
         <!-- The blog’s home web address; set in General Options. -->
             <a href="<?php echo get_option('home'); ?>">
@@ -33,13 +35,17 @@
         <div class="container">
         <nav class="blog-nav">
             <p>Pages:</p>
-            <a class="blog-nav-item active" href="#">Home</a>
-            <!-- lists all pages -->
+            <a class="blog-nav-item active" href="<?php echo get_option('home'); ?>">Home</a>
+        <!-- lists all pages -->
             <?php wp_list_pages( '&title_li=' ); ?>
         </nav>
         <nav class="blog-nav"><p>Categories:</p>
         <!-- lists all categories -->
             <?php wp_list_categories( '&title_li=' ); ?>
+        <!-- it creates navbar from the pages -->
+        <nav class="blog-nav">
+        <p>Bootstrap navbar:</p>
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </nav>
     </div>
   </div>

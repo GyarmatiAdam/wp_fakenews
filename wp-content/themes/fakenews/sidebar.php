@@ -7,17 +7,9 @@
   <div class="sidebar-module">
     <h4>Archives</h4>      
     <!-- List the archives here -->
-    <?php wp_get_archives( 'type=monthly' ); ?>
+    <?php wp_get_archives( 'type=monthly' ); ?><br>
     <ol class="list-unstyled">
     </ol>
   </div>
-  <!-- <div class="sidebar-module">
-    <h4>Elsewhere</h4>
-    <ol class="list-unstyled">
-      <li><a href="#">GitHub</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Facebook</a></li>
-    </ol>
-  </div> -->
 </div>
 <!-- /.blog-sidebar -->
