@@ -33,19 +33,19 @@
      </div>
      <div class="blog-masthead">
         <div class="container">
-        <nav class="blog-nav">
+         <!-- lists all pages -->
+        <!-- <nav class="blog-nav">
             <p>Pages:</p>
             <a class="blog-nav-item active" href="<?php echo get_option('home'); ?>">Home</a>
-        <!-- lists all pages -->
             <?php wp_list_pages( '&title_li=' ); ?>
-        </nav>
+        </nav> -->
         <nav class="blog-nav"><p>Categories:</p>
         <!-- lists all categories -->
             <?php wp_list_categories( '&title_li=' ); ?>
         <!-- it creates navbar from the pages -->
-        <nav class="blog-nav">
+        <!-- <nav class="blog-nav">
         <p>Bootstrap navbar:</p>
-        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?> -->
         </nav>
     </div>
   </div>
